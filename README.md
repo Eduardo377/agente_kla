@@ -134,8 +134,8 @@ sudo python3 -m streamlit run src/dashboard.py
 
 | Versão  | Data       | Autor         | Descrição da Mudança                             |
 | ------- | ---------- | ------------- | ------------------------------------------------ |
-| **2.0** | 24/06/2026 | [Eduardo Gomes](https://www.linkedin.com/in/eduardogomes377/) | Refatoração para Agente IA, Watchdog e Streamlit |
 | [1.0](https://github.com/Eduardo377/projeto_kla)     | 11/06/2026 | [Eduardo Gomes](https://www.linkedin.com/in/eduardogomes377/) | [Lançamento da PoC: Motor Llama 3.1, Docker, CLI](https://github.com/Eduardo377/projeto_kla)  |
+| **2.0** | 24/06/2026 | [Eduardo Gomes](https://www.linkedin.com/in/eduardogomes377/) | Refatoração para Agente IA, Watchdog e Streamlit |
 
 ---
 
