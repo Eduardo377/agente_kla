@@ -41,13 +41,23 @@ def analyze_log(log_snippet):
             model="llama-3.1-8b-instant",
             temperature=0.2,  # Temperatura baixa para focar em precisão técnica
         )
+
+        # Pega o conteúdo da resposta
+        resultado = response.choices[0].message.content
+
+        # Mantém o log no terminal para controle
         print("\n[✓] RELATÓRIO DO AGENTE AUTÔNOMO:")
         print("-" * 60)
-        print(response.choices[0].message.content)
+        print(resultado)
         print("-" * 60)
         print(
             "[*] Agente retornou ao estado de vigilância (Aguardando novos eventos...)\n"
         )
 
+        # Retorna o texto para que o Dashboard também possa usá-lo
+        return resultado
+
     except Exception as e:
-        print(f"[✗] Erro de comunicação com a IA: {e}")
+        erro_msg = f"[✗] Erro de comunicação com a IA: {e}"
+        print(erro_msg)
+        return erro_msg
